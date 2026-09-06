@@ -165,7 +165,7 @@ export function CuriousPortfolio() {
             <h2 id="notes-heading">Things I've been thinking about.</h2>
             <p>A notebook for the questions that sit just outside the job description.</p>
           </div>
-          <div className="ce-notes-grid">
+          <div className="ce-notes-grid" id="notes-list">
             {visibleNotes.map((note, index) => (
               <article className={`ce-note ce-reveal ce-delay-${Math.min(index + 1, 4)}`} key={note.title} data-testid={`card-note-${index}`}>
                 <div className="ce-note-meta"><span>{note.category}</span>{note.date}</div>
@@ -175,7 +175,14 @@ export function CuriousPortfolio() {
               </article>
             ))}
           </div>
-          <button type="button" className="ce-text-button" data-testid="button-toggle-notes" onClick={() => setShowMoreNotes((show) => !show)}>
+          <button
+            type="button"
+            className="ce-text-button"
+            data-testid="button-toggle-notes"
+            aria-expanded={showMoreNotes}
+            aria-controls="notes-list"
+            onClick={() => setShowMoreNotes((show) => !show)}
+          >
             {showMoreNotes ? 'Show fewer notes —' : 'Show all notes +'}
           </button>
         </section>
