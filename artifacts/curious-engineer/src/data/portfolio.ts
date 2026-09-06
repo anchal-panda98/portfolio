@@ -15,7 +15,7 @@ export type ProfessionalProject = {
   note: string;
 };
 
-export type Experiment = { number: string; title: string; tag: string };
+export type Experiment = { number: string; title: string; tag: string; href: string };
 export type Note = { date: string; category: string; title: string; copy: string };
 export type Principle = { key: string; number: string; title: string; statement: string; detail: string };
 export type PortfolioLink = { label: string; href: string; placeholder?: boolean };
@@ -46,12 +46,9 @@ export const portfolio = {
     { index: '03', title: 'Aggregated Test Reporting', company: 'Dell Technologies', label: 'TEST REPORTING / ONBOARDING', note: 'Designed group-level test reporting frameworks and authored user guides for seamless feature onboarding.' },
   ] satisfies ProfessionalProject[],
   experiments: [
-    { number: '01', title: '[Interactive visualization]', tag: 'DATA / FORM' },
-    { number: '02', title: '[Small Python tool]', tag: 'UTILITY / PLAY' },
-    { number: '03', title: '[Simulation]', tag: 'MODEL / QUESTION' },
-    { number: '04', title: '[Tiny product idea]', tag: 'PRODUCT / MAYBE' },
-    { number: '05', title: '[API experiment]', tag: 'SYSTEM / EDGE' },
-    { number: '06', title: '[Visual experiment]', tag: 'IMAGE / MOTION' },
+    { number: '01', title: 'Tectonic', tag: 'DATA / INTERACTION', href: '#tectonic-reflection' },
+    { number: '02', title: 'Log Debugger Agent', tag: 'SYSTEMS / MACHINE LEARNING', href: '#professional-work-02' },
+    { number: '03', title: 'Aggregated Test Reporting', tag: 'TESTING / ONBOARDING', href: '#professional-work-03' },
   ] satisfies Experiment[],
   notes: [
     { date: '12.06.24', category: 'CULTURE', title: 'Why did Nescafé have to teach Japan to drink coffee?', copy: 'A product can be an invitation, a ritual, and a piece of infrastructure at the same time.' },

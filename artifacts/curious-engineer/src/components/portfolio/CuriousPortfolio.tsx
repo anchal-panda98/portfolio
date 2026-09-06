@@ -126,9 +126,9 @@ export function CuriousPortfolio() {
             <a className="ce-cta-link" href="#tectonic-reflection" data-testid="link-tectonic-case-study">Read the working notes <span aria-hidden="true">↗</span></a>
           </article>
 
-           <div className="ce-placeholder-list" id="professional-work" aria-label="Professional work">
+          <div className="ce-placeholder-list" id="professional-work" aria-label="Professional work">
             {portfolio.professionalWork.map((work, index) => (
-              <article className={`ce-placeholder-item ce-reveal ce-delay-${Math.min(index + 1, 4)}`} key={work.index} data-testid={`card-professional-work-${index}`}>
+              <article id={`professional-work-${work.index}`} className={`ce-placeholder-item ce-reveal ce-delay-${Math.min(index + 1, 4)}`} key={work.index} data-testid={`card-professional-work-${index}`}>
                 <span className="ce-placeholder-index">{work.index}</span>
                 <div><h3>{work.title}</h3><span className="ce-placeholder-company">{work.company}</span></div>
                 <p className="ce-placeholder-note">{work.note}</p>
@@ -144,15 +144,15 @@ export function CuriousPortfolio() {
           <section className="ce-section" aria-labelledby="experiments-heading">
             <div className="ce-section-heading ce-reveal">
               <h2 id="experiments-heading">Things I build<br /><em>because I'm curious.</em></h2>
-              <p>Not a catalogue of skills. More like a shelf of half-formed questions, small tools, and ideas that got interesting.</p>
+              <p>Three ways of following a question: make a system visible, make logs legible, and make test results easier to use.</p>
             </div>
             <div className="ce-experiment-grid">
               {portfolio.experiments.map((experiment, index) => (
-                <button type="button" className={`ce-experiment ce-reveal ce-delay-${Math.min(index + 1, 4)}`} key={experiment.number} data-testid={`button-experiment-${experiment.number}`} onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
+                <a className={`ce-experiment ce-reveal ce-delay-${Math.min(index + 1, 4)}`} href={experiment.href} key={experiment.number} data-testid={`link-experiment-${experiment.number}`}>
                   <span className="ce-experiment-number">{experiment.number}</span>
                   <h3>{experiment.title}</h3>
                   <span className="ce-experiment-tag">{experiment.tag}</span>
-                </button>
+                </a>
               ))}
             </div>
           </section>
