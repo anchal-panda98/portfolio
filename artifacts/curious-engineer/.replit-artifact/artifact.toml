@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Curious Engineer Portfolio"
+description = "A distinctive editorial portfolio for a software engineer who explores the space between systems, products, people, and ideas through interactive work and thoughtful experiments."
+version = "1.0.0"
+id = "artifacts/curious-engineer"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26266
+
+[services.development]
+run = "pnpm --filter @workspace/curious-engineer run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/curious-engineer", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/curious-engineer/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26266"
+BASE_PATH = "/"
