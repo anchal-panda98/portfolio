@@ -89,7 +89,7 @@ export function CuriousPortfolio() {
           <div className="ce-hero-index ce-reveal ce-delay-2 is-visible">
             <strong>Notebook / 2025</strong>
             <span>Independent engineer</span>
-            <span>Based in [Your city]</span>
+             <span>Based in {portfolio.identity.city}</span>
             <span>Available for [good questions]</span>
           </div>
         </section>
@@ -126,7 +126,7 @@ export function CuriousPortfolio() {
             <a className="ce-cta-link" href="#tectonic-reflection" data-testid="link-tectonic-case-study">Read the working notes <span aria-hidden="true">↗</span></a>
           </article>
 
-          <div className="ce-placeholder-list" id="professional-work" aria-label="Professional work placeholders">
+           <div className="ce-placeholder-list" id="professional-work" aria-label="Professional work">
             {portfolio.professionalWork.map((work, index) => (
               <article className={`ce-placeholder-item ce-reveal ce-delay-${Math.min(index + 1, 4)}`} key={work.index} data-testid={`card-professional-work-${index}`}>
                 <span className="ce-placeholder-index">{work.index}</span>
@@ -215,7 +215,9 @@ export function CuriousPortfolio() {
             <div className="ce-about-copy ce-reveal ce-delay-2">
               {portfolio.identity.about.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               <div className="ce-links">
-                {portfolio.links.map((link) => <a key={link.label} href={link.href} target={link.href.startsWith('http') ? '_blank' : undefined} rel={link.href.startsWith('http') ? 'noreferrer' : undefined} data-testid={`link-${link.label.toLowerCase()}`}>{link.label} ↗</a>)}
+                {portfolio.links.map((link) => link.placeholder
+                  ? <span className="ce-link-placeholder" key={link.label} aria-disabled="true">{link.label} ↗</span>
+                  : <a key={link.label} href={link.href} target={link.href.startsWith('http') ? '_blank' : undefined} rel={link.href.startsWith('http') ? 'noreferrer' : undefined} data-testid={`link-${link.label.toLowerCase()}`}>{link.label} ↗</a>)}
               </div>
             </div>
           </div>
@@ -231,8 +233,10 @@ export function CuriousPortfolio() {
         <footer className="ce-footer" id="contact">
           <h2 className="ce-reveal">Still <em>curious.</em></h2>
           <div className="ce-footer-bottom">
-            <div className="ce-footer-links">{portfolio.links.map((link) => <a key={link.label} href={link.href} target={link.href.startsWith('http') ? '_blank' : undefined} rel={link.href.startsWith('http') ? 'noreferrer' : undefined} data-testid={`footer-link-${link.label.toLowerCase()}`}>{link.label}</a>)}</div>
-            <span className="ce-footer-meta">© {new Date().getFullYear()} / [YOUR NAME] / MADE WITH QUESTIONS</span>
+            <div className="ce-footer-links">{portfolio.links.map((link) => link.placeholder
+              ? <span className="ce-link-placeholder" key={link.label} aria-disabled="true">{link.label}</span>
+              : <a key={link.label} href={link.href} target={link.href.startsWith('http') ? '_blank' : undefined} rel={link.href.startsWith('http') ? 'noreferrer' : undefined} data-testid={`footer-link-${link.label.toLowerCase()}`}>{link.label}</a>)}</div>
+             <span className="ce-footer-meta">© {new Date().getFullYear()} / {portfolio.identity.name} / MADE WITH QUESTIONS</span>
           </div>
         </footer>
       </div>

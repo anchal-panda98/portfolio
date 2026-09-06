@@ -18,10 +18,12 @@ export type ProfessionalProject = {
 export type Experiment = { number: string; title: string; tag: string };
 export type Note = { date: string; category: string; title: string; copy: string };
 export type Principle = { key: string; number: string; title: string; statement: string; detail: string };
+export type PortfolioLink = { label: string; href: string; placeholder?: boolean };
 
 export const portfolio = {
   identity: {
-    name: 'CURIOUS ENGINEER',
+    name: 'ANCHAL PANDA',
+    city: 'Bangalore, India',
     eyebrow: 'SOFTWARE ENGINEERING · SYSTEMS · PRODUCT · CURIOSITY',
     headline: { lead: 'I like understanding', emphasis: 'how things work.' },
     support: 'Software engineer interested in systems, products, and the space between the two.',
@@ -40,9 +42,8 @@ export const portfolio = {
     { id: 'antarctic', name: 'Antarctic', movement: 'east', position: '77° S / 0° E', points: '120,165 176,157 225,169 263,162 302,176 279,197 210,202 152,193', fill: '#c9c4ad' },
   ] satisfies Plate[],
   professionalWork: [
-    { index: '02', title: '[Professional Project]', company: '[Company]', label: 'CASE STUDY TO COME', note: '[Context, problem, responsibility, constraints, approach, architecture, trade-offs, outcome]' },
-    { index: '03', title: '[Another Professional Project]', company: '[Company]', label: 'CASE STUDY TO COME', note: '[The engineering judgment behind this work belongs here.]' },
-    { index: '04', title: '[A Third Project]', company: '[Company]', label: 'PLACEHOLDER', note: '[Replace this with a concise story about the system and the people it served.]' },
+    { index: '02', title: 'Autonomous Log Debugger Agent', company: 'Nokia', label: 'SYSTEMS / MACHINE LEARNING', note: 'Integrated LSTM and BERT models for system log classification and anomaly prediction, reducing MTTR by 30%.' },
+    { index: '03', title: 'Aggregated Test Reporting', company: 'Dell Technologies', label: 'TEST REPORTING / ONBOARDING', note: 'Designed group-level test reporting frameworks and authored user guides for seamless feature onboarding.' },
   ] satisfies ProfessionalProject[],
   experiments: [
     { number: '01', title: '[Interactive visualization]', tag: 'DATA / FORM' },
@@ -65,15 +66,15 @@ export const portfolio = {
     { key: 'curiosity', number: '04', title: 'Curiosity', statement: 'Following questions even when they are not immediately useful.', detail: 'The side path is often where a better mental model is waiting. I keep a notebook for the questions that do not fit yet.' },
   ] satisfies Principle[],
   currently: [
-    { label: 'BUILDING', value: '[Current project]' },
-    { label: 'LEARNING', value: '[Current topic]' },
-    { label: 'READING', value: '[Current book]' },
-    { label: 'THINKING ABOUT', value: '[Current question]' },
+    { label: 'BUILDING', value: 'Curious about every detail and building things to understand the world better' },
+    { label: 'LEARNING', value: 'Figuring out building my own websites' },
+    { label: 'READING', value: 'Butter by Asako Yuzuki' },
+    { label: 'THINKING ABOUT', value: 'Wondering how are we so young, yet we have already lost so much' },
   ],
   links: [
-    { label: 'GitHub', href: 'https://github.com/' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
-    { label: 'Email', href: 'mailto:hello@example.com' },
-    { label: 'Résumé', href: '#about' },
-  ],
+    { label: 'GitHub', href: 'https://github.com/anchal-panda98' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/anchal-panda-7366a1170/' },
+    { label: 'Email', href: '#contact', placeholder: true },
+    { label: 'Résumé', href: '#about', placeholder: true },
+  ] satisfies PortfolioLink[],
 } as const;
