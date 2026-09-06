@@ -1,0 +1,703 @@
+Build a highly polished, distinctive personal portfolio website for me as a software engineer.
+
+## Core design direction
+
+The website should NOT look like a conventional developer portfolio.
+
+Avoid:
+
+* Generic developer portfolio templates
+* "Hi, I'm X, a software engineer" hero sections
+* Skill-bar charts
+* Excessive technology logos
+* GitHub-style visual language
+* Cyberpunk/neon aesthetics
+* Fake terminal interfaces
+* Overuse of gradients
+* Excessive glassmorphism
+* Stock illustrations
+* Generic SaaS landing-page styling
+
+Instead, take inspiration from these portfolios:
+
+1. https://jackiezhang.co.za
+2. https://anacuna.com/en/
+3. https://www.bpowell.co
+4. https://imbarinov.com
+5. https://mikematas.com
+
+The common principle should be:
+
+"The portfolio itself should demonstrate how I think."
+
+It should feel like the website belongs to an engineer who is deeply interested in systems, products, design, technology, culture, and experimentation.
+
+The site should be minimalist, editorial, highly intentional, and personal, with subtle but excellent interactions.
+
+---
+
+# PERSONAL POSITIONING
+
+The central idea of the portfolio is:
+
+"I like understanding how things work."
+
+Supporting idea:
+
+"I'm a software engineer interested in the space between systems, products, and people."
+
+The website should communicate that I don't just implement software. I enjoy understanding:
+
+* Why a product should exist
+* How systems work
+* How technical decisions affect users
+* How complex information can be made intuitive
+* How technology interacts with human behaviour
+* Exploring ideas through small experiments and software
+
+Do NOT make these statements overly corporate or buzzword-heavy.
+
+The tone should be intelligent, curious, understated, and slightly playful.
+
+---
+
+# SITE STRUCTURE
+
+Create the following sections:
+
+1. HERO
+2. SELECTED WORK
+3. EXPERIMENTS
+4. NOTES / CURIOSITIES
+5. HOW I THINK
+6. ABOUT
+7. CURRENTLY
+8. FOOTER
+
+Use smooth scrolling and subtle transitions between sections.
+
+The entire site should feel like one cohesive visual experience rather than a collection of independent pages.
+
+---
+
+# 1. HERO
+
+The hero should be extremely simple and typography-driven.
+
+Primary statement:
+
+"I like understanding how things work."
+
+Supporting copy:
+
+"Software engineer interested in systems, products, and the space between the two."
+
+Add a small line such as:
+
+"Software Engineering · Systems · Product · Curiosity"
+
+Do not make this look like a conventional résumé introduction.
+
+The hero should have substantial whitespace.
+
+Consider an understated interactive visual element that reacts to cursor movement or scrolling.
+
+The interaction should be subtle and purposeful rather than decorative.
+
+Navigation should be minimal:
+
+Work
+Experiments
+Notes
+About
+
+Keep my name/logo on the left and navigation on the right.
+
+The navigation should become compact/sticky on scroll.
+
+---
+
+# 2. SELECTED WORK
+
+This should be the most important section of the site.
+
+Do NOT call the cards simply "Projects".
+
+Use the heading:
+
+"Selected work"
+
+Each project should feel like an editorial feature rather than a portfolio card.
+
+Create large project blocks with:
+
+* Project name
+* One-line conceptual description
+* Short context
+* My role
+* Relevant technologies
+* Visual preview
+* Link to detailed case study
+
+The visual hierarchy should prioritize:
+
+1. Story
+2. Visual
+3. Outcome
+4. Technical details
+
+Do not lead with technology stacks.
+
+Example structure:
+
+TECTONIC
+
+"What happens when geology becomes an interface?"
+
+Interactive exploration of tectonic plates designed to make geological systems intuitive and explorable.
+
+Role:
+Software Engineer / Builder
+
+Topics:
+Data visualization · APIs · interaction · systems
+
+Then provide a large interactive visual preview.
+
+---
+
+# TECTONIC PROJECT
+
+Make this the flagship personal project.
+
+The project should communicate that I enjoy turning complex systems into intuitive experiences.
+
+Create a visually compelling interactive tectonic-plate visualization.
+
+The exact implementation can be simplified if necessary, but the experience should feel sophisticated.
+
+Potential interaction:
+
+* Earth/globe/map visualization
+* Tectonic plate boundaries
+* Hovering over plates reveals information
+* Clicking a plate reveals details
+* Subtle motion
+* Zoom/pan
+* Geological data
+* Earthquake or plate information if suitable
+
+The project page should explain:
+
+## The question
+
+"How do you communicate a dynamic geological system through an interface?"
+
+## The problem
+
+Geological information is usually represented as static diagrams or textbook illustrations.
+
+## The thinking
+
+Explain:
+
+* Data representation
+* Backend architecture
+* API design
+* Frontend visualization
+* Interaction decisions
+* Trade-offs
+
+## Engineering
+
+Show a simple architecture diagram:
+
+Data
+↓
+Python backend
+↓
+API
+↓
+Visualization
+↓
+Interaction
+
+Use elegant visual diagrams rather than giant blocks of technical text.
+
+## Result
+
+Show the working interactive experience.
+
+## What I learned
+
+A concise reflection.
+
+This case study should feel like an actual product/design case study rather than a GitHub README.
+
+---
+
+# 3. PROFESSIONAL WORK
+
+Reserve space for 2–3 professional projects.
+
+Do NOT invent project details.
+
+Use placeholder content that I can replace later.
+
+Each professional case study should follow:
+
+Context
+↓
+Problem
+↓
+My responsibility
+↓
+Constraints
+↓
+Approach
+↓
+Architecture
+↓
+Important decisions
+↓
+Trade-offs
+↓
+Outcome
+↓
+What I learned
+
+The writing should focus on engineering judgment rather than merely listing implementation tasks.
+
+For example, instead of:
+
+"Built a REST API using Python."
+
+Prefer:
+
+"Designed the service boundary around X so that Y could evolve independently."
+
+Use technical diagrams, timelines, decision trees, architecture diagrams, and annotated screenshots wherever appropriate.
+
+---
+
+# 4. EXPERIMENTS
+
+Create a section titled:
+
+"Things I build because I'm curious."
+
+This section should contain smaller projects and experiments.
+
+Examples can initially be placeholders:
+
+* Interactive visualization
+* Data experiment
+* Small Python tool
+* API experiment
+* Simulation
+* Visual experiment
+* Automation
+* Tiny product idea
+
+These should be presented more playfully than professional work.
+
+The purpose is not to prove that I know technologies.
+
+The purpose is to show:
+
+"I like exploring."
+
+Use a compact grid/list layout with interesting hover interactions.
+
+---
+
+# 5. NOTES / CURIOSITIES
+
+Create a section called:
+
+"Things I've been thinking about."
+
+This is important.
+
+I want the portfolio to communicate that my curiosity extends beyond software.
+
+Example notes:
+
+"Why did Nescafé have to teach Japan to drink coffee?"
+
+"What happens when a technical system meets human behaviour?"
+
+"Why do some interfaces feel physical?"
+
+"How did commodities like salt become more than food?"
+
+These are examples only.
+
+Do not fabricate long essays.
+
+Create short editorial previews with:
+
+* Title
+* Date
+* Category
+* 1–2 sentence introduction
+* Read more interaction
+
+This should feel closer to a personal notebook/editorial journal than a corporate blog.
+
+---
+
+# 6. HOW I THINK
+
+Create a section with four themes:
+
+SYSTEMS
+Understanding how components interact.
+
+PRODUCT
+Understanding why something should exist.
+
+ENGINEERING
+Turning constraints into reliable systems.
+
+CURIOSITY
+Following questions even when they aren't immediately useful.
+
+Make this section visually interesting.
+
+Consider a connected-node system where hovering over each theme reveals additional information.
+
+Do not make it look like a skills section.
+
+These are principles, not résumé skills.
+
+---
+
+# 7. ABOUT
+
+The About section should feel human.
+
+Do not reproduce a conventional résumé.
+
+Use a short narrative along the lines of:
+
+"I'm a software engineer who enjoys understanding systems — especially the messy space where technology meets people.
+
+Most of my professional life is spent building software. Outside of work, I tend to disappear down rabbit holes: products, technology, culture, maps, coffee, books, and occasionally ideas that have absolutely no reason to become software.
+
+Some of them do anyway."
+
+You can polish the writing slightly, but preserve the personality and avoid corporate language.
+
+Include links to:
+
+* GitHub
+* LinkedIn
+* Email
+* Résumé
+
+---
+
+# 8. CURRENTLY
+
+Create a small "Currently" section.
+
+Include:
+
+BUILDING
+[Current project]
+
+LEARNING
+[Current topic]
+
+READING
+[Current book]
+
+THINKING ABOUT
+[Current question]
+
+This section should be visually small and understated.
+
+The purpose is to make the portfolio feel alive rather than static.
+
+---
+
+# 9. FOOTER
+
+Very simple.
+
+Something like:
+
+"Still curious."
+
+Then:
+
+GitHub
+LinkedIn
+Email
+Résumé
+
+Include copyright/year.
+
+---
+
+# VISUAL DESIGN
+
+The visual design should combine:
+
+* Editorial typography
+* Large headlines
+* Generous whitespace
+* Strong grid
+* Neutral background
+* One distinctive accent colour
+* Monospace typography for metadata/labels
+* Fine borders
+* Small technical annotations
+* Large visual project previews
+
+Avoid excessive colour.
+
+The site should look excellent even with no images.
+
+Use typography and layout as the primary visual tools.
+
+Suggested typography hierarchy:
+
+Huge:
+56–96px hero typography on desktop.
+
+Large:
+40–64px section/project titles.
+
+Body:
+16–20px.
+
+Metadata:
+11–13px monospace uppercase.
+
+Use responsive typography.
+
+---
+
+# INTERACTION DESIGN
+
+Animations should be subtle and purposeful.
+
+Use:
+
+* Smooth scrolling
+* Fade/slide reveals
+* Text transformations
+* Image movement
+* Cursor interactions
+* Hover states
+* Project previews
+* Scroll-based transitions
+
+Do NOT:
+
+* Animate everything
+* Use excessive parallax
+* Add loading animations just for decoration
+* Use annoying cursor replacements
+* Make navigation difficult
+
+A visitor should always feel in control.
+
+Animation should communicate hierarchy and depth.
+
+---
+
+# SIGNATURE INTERACTION
+
+Create one memorable interaction for the homepage.
+
+Possible direction:
+
+The site subtly behaves like a system diagram.
+
+The navigation/work/about elements can feel like nodes in a connected system.
+
+As the user scrolls, the system changes state.
+
+Keep this sophisticated and subtle.
+
+Do NOT create a literal terminal or a gimmicky "developer UI".
+
+---
+
+# RESPONSIVE DESIGN
+
+Desktop should be the primary visual experience.
+
+But mobile must be designed intentionally, not simply scaled down.
+
+On mobile:
+
+* Preserve typography hierarchy
+* Simplify complex interactions
+* Replace large interactive visualizations with elegant static/interactive alternatives
+* Maintain generous whitespace
+* Keep navigation simple
+* Ensure excellent touch interactions
+
+The website must work beautifully on:
+
+* Desktop
+* Tablet
+* Mobile
+
+---
+
+# TECHNICAL IMPLEMENTATION
+
+Use:
+
+Next.js
+React
+TypeScript
+Tailwind CSS
+
+Use Framer Motion for animations where appropriate.
+
+Use Three.js / React Three Fiber / D3 only when they materially improve an interaction.
+
+Do not add unnecessary dependencies.
+
+Use semantic HTML.
+
+Prioritize:
+
+* Accessibility
+* Performance
+* SEO
+* Responsive design
+* Clean component architecture
+
+Structure the project cleanly.
+
+Suggested structure:
+
+/app
+/components
+/components/ui
+/components/sections
+/components/projects
+/data
+/lib
+/public
+/styles
+
+Keep content/data separate from presentation so I can easily edit projects, notes, and personal information later.
+
+---
+
+# CONTENT MODEL
+
+Create structured data for:
+
+projects
+experiments
+notes
+currently
+
+For example:
+
+Project:
+
+* title
+* subtitle
+* description
+* category
+* role
+* technologies
+* year
+* image
+* slug
+* featured
+* caseStudy
+
+This should make it easy to add new projects without changing component code.
+
+---
+
+# CASE STUDY DESIGN
+
+Case studies should feel like editorial documents.
+
+Use:
+
+01 — CONTEXT
+02 — PROBLEM
+03 — THINKING
+04 — ENGINEERING
+05 — DECISIONS
+06 — RESULT
+07 — REFLECTION
+
+Include:
+
+* Large typography
+* Architecture diagrams
+* Screenshots
+* Interactive demos
+* Code snippets only when genuinely useful
+
+Avoid walls of text.
+
+Use visual storytelling.
+
+---
+
+# IMPORTANT
+
+Do not invent my professional history, companies, projects, metrics, achievements, or technologies.
+
+Where information is unavailable, use clearly marked placeholders such as:
+
+[Professional Project]
+[Company]
+[Outcome]
+[Architecture diagram]
+
+I will replace these later.
+
+The site should be designed so replacing placeholder content is easy.
+
+---
+
+# QUALITY BAR
+
+The final result should feel closer to the portfolio of an exceptional independent engineer/designer than a typical software-engineer résumé website.
+
+The website should make a visitor think:
+
+"This person is an engineer, but they think about technology differently."
+
+The three strongest impressions should be:
+
+1. Technical competence
+2. Product/system thinking
+3. Curiosity
+
+The website itself should demonstrate all three.
+
+Before finishing, check:
+
+* No generic template feel
+* No excessive animations
+* No fake technical jargon
+* No invented career information
+* Excellent typography
+* Strong visual hierarchy
+* Fast loading
+* Mobile responsive
+* Accessible
+* Every interaction has a purpose
+* Content is easy to update
+* The Tectonic project feels like the flagship piece
+
+Build the first complete version rather than only creating a wireframe.
+
+Use realistic placeholder content where my personal information is unavailable, but make the visual experience fully functional.
